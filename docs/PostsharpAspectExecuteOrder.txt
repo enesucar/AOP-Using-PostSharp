@@ -1,0 +1,20 @@
+Console.WriteLine("OnEntry");
+try
+{
+    /*
+        .....
+            Console.WriteLine("On Yield"); //on await
+            Console.WriteLine("On Resume"); // after await
+        .....
+    */
+    Console.WriteLine("OnSuccess");
+}
+catch (Exception)
+{
+
+    Console.WriteLine("OnException");
+}
+finally
+{
+    Console.WriteLine("OnExit");
+}
